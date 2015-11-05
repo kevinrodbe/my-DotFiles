@@ -5,6 +5,8 @@ echo "[Jade Instalado]"
 
 sudo npm install -g stylus
 echo "[Stylus Instalado]"
+sudo npm install -g nib
+echo "[Stylus Instalado]"
 
 #sudo npm install -g coffee-script
 #echo "[CoffeeScript Instalado]"
@@ -13,7 +15,9 @@ sudo npm install -g gulp
 echo "[Gulp Instalado]"
 #problema de gulp: watch enospc
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-
+#actualizar package json de gulp
+sudo npm install -g npm-check-updates 
+echo "[Package actualizados]"
 #sudo npm install -g bower
 #echo "[Bower Instalado]"
 
@@ -32,7 +36,20 @@ echo "[browser-sync Instalado]"
 #sudo npm install -g mocha
 #echo "[Mocha Instalado]"
 
+#dependencias de phantomjs
+sudo apt-get install libfreetype6 libfreetype6-dev
+sudo apt-get install libfontconfig1 libfontconfig1-dev
+
+cd ~
+export PHANTOM_JS="phantomjs-1.9.8-linux-x86_64"
+wget https://bitbucket.org/ariya/phantomjs/downloads/$PHANTOM_JS.tar.bz2
+sudo tar xvjf $PHANTOM_JS.tar.bz2
+
+sudo mv $PHANTOM_JS /usr/local/share
+sudo ln -sf /usr/local/share/$PHANTOM_JS/bin/phantomjs /usr/local/bin
+
 sudo npm install -g phantomas
+phantomjs --version
 echo "[phantomas Instalado]"
 
 #sudo npm install -g psi
