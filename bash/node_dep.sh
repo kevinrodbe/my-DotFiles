@@ -54,3 +54,14 @@ echo "[phantomas Instalado]"
 
 #sudo npm install -g psi
 #echo "[psi Instalado]"
+
+#TMI - https://github.com/addyosmani/tmi
+sudo npm install --global tmi
+
+# webpagetest - (get apikey)
+sudo npm install webpagetest -g
+echo "[webpagetest instalado]"
+
+#pagespeed - https://github.com/addyosmani/psi
+sudo npm install --global psi
+echo "[psi instalado]"
