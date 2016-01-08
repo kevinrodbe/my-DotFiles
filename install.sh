@@ -14,3 +14,8 @@ bash bash/mysql.sh
 mkdir /home/gohan/proyectos
 bash bash/phpmyadmin.sh
 bash bash/tools.sh
+
+# checar los drivers
+#lspci
+#lsusb
+#ubuntu-drivers devices
