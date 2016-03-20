@@ -11,6 +11,10 @@ sudo service apache2 restart
 sudo a2enmod expires
 sudo service apache2 restart
 
+# En windows con xampp.
+# Buscar y descomentar "mod_expires.so" en  C:\XAMPP\apache\conf\httpd.conf
+# LoadModule expires_module modules/mod_expires.so
+
 #headers
 sudo a2enmod headers
 sudo service apache2 restart
