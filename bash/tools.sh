@@ -32,3 +32,7 @@ sudo apt-get install bleachbit
 sudo apt-get install python-setuptools
 
 sudo easy_install Pygments
+
+# Voz en termial
+sudo apt-get install espeak
+# espeak -v es-mx "Mi texto"
