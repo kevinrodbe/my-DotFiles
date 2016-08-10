@@ -3,6 +3,7 @@
 bash bash/git.sh
 bash bash/sublime.sh
 bash bash/zsh.sh
+bash bash/tmux.sh
 bash bash/nodejs.sh
 bash bash/node_deps.sh
 bash bash/tools_linux.sh
