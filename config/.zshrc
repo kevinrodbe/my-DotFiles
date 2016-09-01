@@ -89,11 +89,11 @@ if [[ -z "$TMUX" ]] ;then
     ID="`tmux ls | grep -vm1 attached | cut -d: -f1`" # get the id of a deattached session
     if [[ -z "$ID" ]] ;then # if not available create a new one
         tmux new-session -s 1-main -d
-        tmux split-window -h
-        tmux split-window -t 2 -v
-        tmux send-keys -t 1 'p' C-j
-        tmux send-keys -t 2 'p' C-m
-        tmux send-keys -t 3 'p' enter
+        tmux split-window -v
+        tmux split-window -t 2 -h
+        tmux send-keys -t 1 'p && clear' C-j
+        tmux send-keys -t 2 'p && clear' C-m
+        tmux send-keys -t 3 'p && clear' enter
         tmux select-pane -t 1
 		tmux attach -t 1-main
     else
@@ -104,8 +104,10 @@ fi
 # my-alias
 alias rm='rm -i'
 alias g="git"
-alias p="cd ~/path1/"
-alias mp="cd ~/path1/to/proy"
+alias p="cd ~/proyectos/"
+alias c="cd ~/proyectos/cursos-lab/"
+alias t="cd ~/proyectos/test/"
+alias aku="cd ~/proyectos/akuma/wp-content/themes/boilerplate"
 
 # Easier navigation:
 alias ..="cd .."
@@ -116,5 +118,45 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # npm
-alias npmi="sudo npm install"
-alias npmg="sudo npm install -g"
+alias npmi="npm install"
+alias npmis="npm install -S"
+alias npmid="npm install -D"
+alias npmig="npm install -g"
+
+#tmux
+alias klt="tmux kill-session"
+
+# Open directory or program
+alias gc="google-chrome"
+alias ff="firefox"
+alias go="nautilus"
+
+# compile js con rhino
+alias rhino="node r.js -o build.js"
+
+# APT Update
+alias u13="sudo apt-get update"
+alias u23="sudo apt-get upgrade"
+alias u33="sudo apt-get dist-upgrade"
+
+alias apti="sudo apt-get install"
+
+# APT clean
+alias aptac="sudo apt-get autoclean"
+alias aptc="sudo apt-get clean"
+alias aptar="sudo apt-get autoremove"
+
+# Clean Cache
+alias free14="sync; echo 1 > /proc/sys/vm/drop_caches"
+alias free24="sync; echo 2 > /proc/sys/vm/drop_caches"
+alias free34="sync; echo 3 > /proc/sys/vm/drop_caches "
+alias free44="swapoff -a && swapon -a"
+
+# IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ifconfig getifaddr en0"
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+
+# View HTTP traffic
+alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
+alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
