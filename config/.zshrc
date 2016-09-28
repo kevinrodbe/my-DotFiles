@@ -123,6 +123,7 @@ compdef _npm_install_completion 'npm'
 # }
 
 # my-alias
+alias bye="exit"
 alias rm='rm -i'
 alias g="git"
 alias p="cd ~/proyectos/"
