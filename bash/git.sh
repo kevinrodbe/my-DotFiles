@@ -9,6 +9,6 @@ sudo apt-get install git-extras
 
 #config
 git config --global user.name "kevinrodbe"     
-git config --global user.email kevin.rodriguez992@gmail.com
+git config --global user.email email@email.com
 
 echo "** git instalado **"
