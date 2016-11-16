@@ -4,7 +4,8 @@ bash bash/git.sh
 bash bash/sublime.sh
 bash bash/zsh.sh
 bash bash/tmux.sh
-bash bash/nodejs.sh
+# bash bash/nodejs.sh
+bash bash/nodejs_by_nvm.sh
 bash bash/node_deps.sh
 bash bash/tools_linux.sh
 bash bash/chrome.sh
