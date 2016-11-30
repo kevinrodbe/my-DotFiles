@@ -24,4 +24,4 @@ git clone https://github.com/zsh-users/zsh-history-substring-search.git
 git clone https://github.com/ascii-soup/zsh-url-highlighter.git 
 
 
-echo "Zsh instalado"
+echo "ZSH instalado: ***** Restart terminal *****"
