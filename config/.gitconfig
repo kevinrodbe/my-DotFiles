@@ -27,6 +27,12 @@
     cm = commit -m
     ca = commit --amend -m
 
+    # Undo
+    forget = reset --hard
+    
+    # help
+    wtf = help -w
+    
     # Checkout
     co = checkout
     cb = checkout -b
@@ -41,6 +47,7 @@
     tl = tag -l
     bl = branch -a
     rl = remote -v
+    stal = stash list
 
     # Status
     st = status -s
