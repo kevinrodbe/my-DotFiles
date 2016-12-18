@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+#instead of node to run your code, and now your process will automatically restart 
+sudo npm i -g nodemon
+
 #sudo npm install -g jade
 echo "[Jade Instalado]"
 
