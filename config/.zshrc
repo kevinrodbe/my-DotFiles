@@ -131,6 +131,9 @@ alias c="cd ~/proyectos/cursos-lab/"
 alias t="cd ~/proyectos/test/"
 alias aku="cd ~/proyectos/akuma/wp-content/themes/boilerplate"
 
+# because eslint is installed locally. Now we can use slint --init ó slint myfile.js 
+alias slint="./node_modules/.bin/eslint"
+
 # Easier navigation:
 alias ..="cd .."
 alias .2="cd ../.."
