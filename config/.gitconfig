@@ -43,6 +43,7 @@
     # Diff
     df = diff
     dc = diff --cached
+    fls = diff-tree --no-commit-id --name-only -r
 
     # List
     tl = tag -l
