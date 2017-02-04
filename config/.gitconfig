@@ -43,6 +43,7 @@
     # Diff
     df = diff
     dc = diff --cached
+    ds = diff --stat --relative
     fls = diff-tree --no-commit-id --name-only -r
 
     # List
