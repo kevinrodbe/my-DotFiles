@@ -14,6 +14,10 @@ echo "[Stylus Instalado]"
 #sudo npm install -g coffee-script
 #echo "[CoffeeScript Instalado]"
 
+
+sudo npm i -g firebase-tools
+echo "[********** Firebase installed **********]"
+
 sudo npm install -g gulp
 echo "[Gulp Instalado]"
 #problema de gulp: watch enospc
