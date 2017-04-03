@@ -129,9 +129,10 @@ alias g="git"
 alias p="cd ~/proyectos/"
 alias c="cd ~/proyectos/cursos-lab/"
 alias t="cd ~/proyectos/test/"
-alias aku="cd ~/proyectos/akuma/wp-content/themes/boilerplate"
+alias aku="cd ~/proyectos/myProy/wp-content/themes/boilerplate"
+alias gu="gulp"
 
-# because eslint is installed locally. Now we can use slint --init ó slint myfile.js 
+# because eslint is installed locally. Now we can use slint --init ó slint myfile.js
 alias slint="./node_modules/.bin/eslint"
 
 # Easier navigation:
@@ -140,7 +141,7 @@ alias .2="cd ../.."
 alias .3="cd ../../.."
 alias .4="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
-alias -- -="cd -"
+alias --="cd -"
 
 # npm
 alias npmt="npm test"
