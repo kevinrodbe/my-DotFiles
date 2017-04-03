@@ -1,4 +1,4 @@
-###Dev
+### Dev
 
 - [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [React.js code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
@@ -8,7 +8,7 @@
 - [ftp-sync](https://marketplace.visualstudio.com/items?itemName=lukasz-wronski.ftp-sync)
 - [Slack](https://marketplace.visualstudio.com/items?itemName=sozercan.slack)
 
-###Git
+### Git
 
 - [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
 - [Git Project Manager](https://marketplace.visualstudio.com/items?itemName=felipecaputo.git-project-manager)
@@ -20,7 +20,7 @@
 - [gi](https://marketplace.visualstudio.com/items?itemName=rubbersheep.gi)
 
 
-###Productivity
+### Productivity
 
 - [Copy Relative Path](https://marketplace.visualstudio.com/items?itemName=alexdima.copy-relative-path)
 - [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
@@ -29,14 +29,14 @@
 - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 
 
-##Html
+### HTML
 - [Html Tag Wrap](https://marketplace.visualstudio.com/items?itemName=bradgashler.htmltagwrap)
 - [HTML Class Suggestions](https://marketplace.visualstudio.com/items?itemName=AndersEAndersen.html-class-suggestions)
 - [BEM Expand](https://marketplace.visualstudio.com/items?itemName=lukazakrajsek.bem-expand)
 - [Random](https://marketplace.visualstudio.com/items?itemName=jrebocho.vscode-random)
 
 
-###Formatting & Beautification
+### Formatting & Beautification
 
 - [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
 - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
@@ -49,7 +49,7 @@
 - [language-stylus](https://marketplace.visualstudio.com/items?itemName=sysoev.language-stylus)
 
 
-###Utilities
+### Utilities
 
 - [SVG Viewer](https://marketplace.visualstudio.com/items?itemName=cssho.vscode-svgviewer)
 - [Open in Browser](https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser)
