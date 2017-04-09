@@ -16,7 +16,8 @@
 		"CVS",
 		".awestruct",
 		".sass-cache",
-		"node_modules"
+		"node_modules",
+		".tmp"
 	],
 	"file_exclude_patterns": [
 		"*.pyc",
@@ -39,7 +40,10 @@
 		"*.psd",
 		"*.db",
 		"*.sublime-workspace",
-		"*.ai"
+		"*.ai",
+		"*.map",
+		"*.gzip",
+		"*.min.*"
 	],
 	"binary_file_patterns": [
 		"*.jpg",
