@@ -1,6 +1,7 @@
 ### Dev
 
 - [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint)
 - [React.js code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
 - [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
 - [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
