@@ -1,0 +1,24 @@
+/**
+ * custom css to vscode
+ */
+
+/**
+ *  comentarios
+ */
+.mtk4 {
+  font-style: italic !important;
+}
+
+/**
+ *  keyword en js
+ */
+[data-mode-id="javascript"] .mtk5 {
+  font-style: italic !important;
+}
+
+/**
+ *  atributos html + variables js
+ */
+[data-mode-id="html"] .mtk11 {
+  font-style: italic !important;
+}
