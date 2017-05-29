@@ -17,7 +17,9 @@
 		".awestruct",
 		".sass-cache",
 		"node_modules",
-		".tmp"
+		".tmp",
+		".vscode",
+		"dist"
 	],
 	"file_exclude_patterns": [
 		"*.pyc",
