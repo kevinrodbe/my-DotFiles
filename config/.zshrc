@@ -131,6 +131,14 @@ alias c="cd ~/proyectos/cursos-lab/"
 alias t="cd ~/proyectos/test/"
 alias aku="cd ~/proyectos/myProy/wp-content/themes/boilerplate"
 alias gu="gulp"
+# tells me my IP Address
+alias myip='curl ip.appspot.com'
+# Make directory and enter it
+function mkd() {
+    mkdir -p "$@" && cd "$@"
+}
+# open up emoji cheat sheet in browser
+alias emojis="open http://www.emoji-cheat-sheet.com/"
 
 # because eslint is installed locally. Now we can use slint --init ó slint myfile.js
 alias slint="./node_modules/.bin/eslint"
@@ -154,6 +162,8 @@ alias npmig="npm install -g"
 
 #tmux
 alias klt="tmux kill-session"
+# restart window
+alias wtf="source ~/.zshrc"
 
 # Open directory or program
 alias gc="google-chrome"
@@ -189,3 +199,48 @@ alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[
 # View HTTP traffic
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
+
+#
+# Personal Goals
+#
+
+# check off personal goals (open main README.md in vim)
+alias pg-ch="vim ~/proyectos/dk/README.md"
+
+# create new week in review
+function pg-review() {
+  if [ $# -eq 0 ]; then
+      print "Oops. Please enter a file name: month - week (i.e. 11 2)"
+    else
+      cd ~/proyectos/dk/accomplishments && touch 2017-"$1"-week"$2".md;
+      cat 0-review-template.md >> 2017-"$1"-week"$2".md && vim 2017-"$1"-week"$2".md;
+  fi
+}
+
+# add a thing to do the the following week
+# this function opens the newest accomplishments file in vim
+# nw stands for "next week"
+function pg-nw() {
+  if [ $# -eq 0 ]; then
+    cd ~/proyectos/dk/accomplishments;
+    newestFile=$(ls -t | head -n1);
+    vim $newestFile;
+  fi
+}
+
+# add to content list (opens content list folder in vim)
+# i.e. pg-add blog-post or pd-add resource
+function pg-add() {
+  if [ $# -eq 0 ]; then
+      print "Oops. Please enter a content type! (i.e. pg-add video)"
+    else
+      vim ~/proyectos/dk/content-list/"$1"s.md
+  fi
+}
+
+# push my changes to my github master branch and open the page
+alias pg-gh="cd ~/proyectos/dk &&
+  git add -A &&
+  git commit -m 'push from terminal' &&
+  git push origin master &&
+  open http://github.com/una/personal-goals"
