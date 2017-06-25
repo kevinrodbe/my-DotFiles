@@ -243,4 +243,4 @@ alias pg-gh="cd ~/proyectos/dk &&
   git add -A &&
   git commit -m 'push from terminal' &&
   git push origin master &&
-  open http://github.com/una/personal-goals"
+  open http://github.com/kevinrodbe/personal-goals"
