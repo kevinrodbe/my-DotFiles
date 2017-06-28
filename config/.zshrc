@@ -208,7 +208,7 @@ alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET
 alias pg-ch="vim ~/proyectos/dk/README.md"
 
 # create new week in review
-function pg-review() {
+function pg-rv() {
   if [ $# -eq 0 ]; then
       print "Oops. Please enter a file name: month - week (i.e. 11 2)"
     else
