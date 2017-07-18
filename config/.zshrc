@@ -131,6 +131,7 @@ alias c="cd ~/proyectos/cursos-lab/"
 alias t="cd ~/proyectos/test/"
 alias aku="cd ~/proyectos/myProy/wp-content/themes/boilerplate"
 alias gu="gulp"
+alias gr="grunt"
 # tells me my IP Address
 alias myip='curl ip.appspot.com'
 # Make directory and enter it
@@ -244,3 +245,12 @@ alias pg-gh="cd ~/proyectos/dk &&
   git commit -m 'push from terminal' &&
   git push origin master &&
   open http://github.com/kevinrodbe/personal-goals"
+  
+  ## Download mp3 audio from Youbtube (need youtube-dl first)
+function mp3() {
+  if [ $# -eq 0 ]; then
+      print "Oops. Please enter a url: get-audio <youtube-link>"
+  else
+    cd ./Music && youtube-dl --extract-audio --audio-format mp3 $1 && cd -
+  fi
+}
