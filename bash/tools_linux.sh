@@ -25,11 +25,6 @@ sudo easy_install3 pip
 # pip --help                       
 pip install --upgrade pip
 
-
-#Enable Emoji firefox
-sudo add-apt-repository ppa:eosrei/fonts   
-sudo apt update && sudo apt install fonts-emojione-svginot
-
 #Emoji keyboard
 sudo apt install python3-gi gir1.2-gtk-3.0 gir1.2-glib-2.0 gir1.2-appindicator3-0.1 python3-xlib
 sudo pip3 install https://github.com/OzymandiasTheGreat/emoji-keyboard/archive/master.zip
