@@ -46,3 +46,6 @@ sudo apt-get update && sudo apt-get install yarn
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
 sudo chmod a+rx /usr/local/bin/youtube-dl
 
+#Brave browser
+wget -O brave.deb https://laptop-updates.brave.com/latest/dev/ubuntu64
+sudo dpkg -i brave.deb
