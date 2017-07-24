@@ -4,7 +4,7 @@
 </h1>
 
 # [Kevinrodbe's][web] dotfiles ✌
-My personal dotfiles and configuration for Ubuntu.
+My personal dotfiles and configuration for **Ubuntu**.
 You're welcome to make suggestions.
 
 ## Installation 🚀
@@ -17,7 +17,7 @@ Or **download** it without Git (downloaded in home directory: `~/dotfiles`) ⬇
 cd ~ && mkdir dotfiles && cd dotfiles && curl -#L https://github.com/kevinrodbe/my-DotFiles/tarball/master | tar -xzv --strip-components 1 --exclude={.gitignore,.gitattributes,.git-ftp-ignore}
 ```
 
-2.- **Edit** these files with your personal data (email, pc-name, git account, etc) ✏
+2.- **Edit** these files with your personal data (email, pc-name, git account, etc) and replace them in your pc ✏
 + config/.gitconfig
 + config/.zshrc
 + config/.aliases.sh
@@ -31,10 +31,25 @@ sh install.sh
 
  4.- **Restart** and enjoy it! 🙌
 
-## Screenshot 🖼
-![Desktpo 1][dsk1]
-![Desktpo 2][dsk2]
-![Desktpo 3][dsk3]
+## Terminal's Features
+Don't forget to **copy** `config/kevinrodbe.zsh-theme` into `~/.oh-my-zsh/themes` folder
+
+* Current working folder
+* Git branch
+* Git status
+  * `💯` —— Clean branch
+  * `🔥` —— Dirty branch
+  * `+`  —— Added files
+  * `-`  —— Deleted files
+  * `*`  —— Modified files
+  * `>`  —— Renamed files
+  * `=`  —— Unmerged changes
+  * `?`  —— Untracked changes
+
+## Screenshots 🖼
+![Desktop 1][dsk1]
+![Desktop 2][dsk2]
+![Desktop 3][dsk3]
 
 
 [dsk1]: dsk1.png "Desktop 1"
