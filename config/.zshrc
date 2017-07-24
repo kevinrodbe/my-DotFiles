@@ -123,4 +123,4 @@ compdef _npm_install_completion 'npm'
 # }
 
 ### MY ALIASES
-source "~/.aliases.sh"
+source $HOME/.aliases.sh

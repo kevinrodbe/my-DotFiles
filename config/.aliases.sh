@@ -124,7 +124,7 @@ alias pg-gh="cd ~/proyectos/dk &&
   git add -A &&
   git commit -m 'push from terminal' &&
   git push origin master &&
-  open http://github.com/kevinrodbe/personal-goals"
+  open https://github.com/kevinrodbe/personal-goals"
 
   ## Download mp3 audio from Youbtube (need youtube-dl first)
 function mp3() {
@@ -156,7 +156,6 @@ function gz() {
 	echo "gzipped size (bytes): "
 	gzip -c "$1" | wc -c
 }
-
 
 # Extract archives - use: extract <file>
 # Based on http://dotfiles.org/~pseup/.bashrc
