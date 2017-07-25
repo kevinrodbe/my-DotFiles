@@ -33,6 +33,7 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias --="cd -"
 
 # npm
+alias nch="npm-check"
 alias npmt="npm test"
 alias npms="npm start"
 alias npmr="npm run "

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#instead of node to run your code, and now your process will automatically restart 
+#instead of node to run your code, and now your process will automatically restart
 sudo npm i -g nodemon
 
 #sudo npm install -g jade
@@ -23,7 +23,8 @@ echo "[Gulp Instalado]"
 #problema de gulp: watch enospc
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 #actualizar package json de gulp
-sudo npm install -g npm-check-updates 
+sudo npm install -g npm-check-updates
+sudo npm install -g npm-check
 echo "[Package actualizados]"
 #sudo npm install -g bower
 #echo "[Bower Instalado]"
