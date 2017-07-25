@@ -49,3 +49,12 @@ sudo chmod a+rx /usr/local/bin/youtube-dl
 #Brave browser
 wget -O brave.deb https://laptop-updates.brave.com/latest/dev/ubuntu64
 sudo dpkg -i brave.deb
+
+# vim: plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+  https://raw.githubusercontent.com/junegunn/vim-plug/master
+
+# vim: nvim
+sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt-get update
+sudo apt-get install neovim
