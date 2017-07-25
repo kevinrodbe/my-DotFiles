@@ -6,7 +6,7 @@
 
 " Syntax highlighting {{{
 set t_Co=256
-colorscheme molotov
+colorscheme molokai
 " }}}
 
 " Mapleader {{{
@@ -72,7 +72,6 @@ set splitright " New windows goes right
 set suffixes=.bak,~,.swp,.swo,.o,.d,.info,.aux,.log,.dvi,.pdf,.bin,.bbl,.blg,.brf,.cb,.dmg,.exe,.ind,.idx,.ilg,.inx,.out,.toc,.pyc,.pyd,.dll
 set switchbuf=""
 set title " Show the filename in the window titlebar
-set termguicolors " Enable true color support
 set undofile " Persistent Undo
 set viminfo=%,'9999,s512 " Restore buffer list, marks are remembered for 9999 files, registers up to 512Kb are remembered
 set visualbell " Use visual bell instead of audible bell (annnnnoying)
@@ -116,17 +115,6 @@ augroup general_config
     map + <C-W>+
     map - <C-W>-
   endif
-  " }}}
-
-  " Better split switching (Ctrl-j, Ctrl-k, Ctrl-h, Ctrl-l) {{{
-  tnoremap <C-h> <C-\><C-n><C-w>h
-  tnoremap <C-j> <C-\><C-n><C-w>j
-  tnoremap <C-k> <C-\><C-n><C-w>k
-  tnoremap <C-l> <C-\><C-n><C-w>l
-  nnoremap <C-j> <C-W>j
-  nnoremap <C-k> <C-W>k
-  nnoremap <C-h> <C-W>h
-  nnoremap <C-l> <C-W>l
   " }}}
 
   " Sudo write (,W) {{{
