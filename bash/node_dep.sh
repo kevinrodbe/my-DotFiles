@@ -76,3 +76,4 @@ echo "[psi instalado]"
 
 # now
 sudo npm i -g --unsafe-perm  now
+# en c/proy: npm install --save-dev serve
