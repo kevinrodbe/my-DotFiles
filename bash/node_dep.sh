@@ -73,3 +73,6 @@ echo "[webpagetest instalado]"
 #pagespeed - https://github.com/addyosmani/psi
 sudo npm install --global psi
 echo "[psi instalado]"
+
+# now
+sudo npm i -g --unsafe-perm  now
