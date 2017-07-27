@@ -13,16 +13,16 @@ sudo apt-get install build-essential libssl-dev
 sudo apt-get install aptitude
 
 #This will update the packages on your system and install codecs for proprietary files with restricted copyright (MP3, AVI, MPEG, Microsoft fonts) and Adobe Flash Player:
-sudo apt-get update && sudo apt-get dist-upgrade  
-sudo apt-get install ubuntu-restricted-extras 
+sudo apt-get update && sudo apt-get dist-upgrade
+sudo apt-get install ubuntu-restricted-extras
 
 echo "** tools_linux instalado **"
 
 # install pip3
 sudo apt-get install python3-setuptools
-sudo easy_install3 pip   
-# verify installation 
-# pip --help                       
+sudo easy_install3 pip
+# verify installation
+# pip --help
 pip install --upgrade pip
 
 #Emoji keyboard
@@ -31,3 +31,6 @@ sudo pip3 install https://github.com/OzymandiasTheGreat/emoji-keyboard/archive/m
 
 #Emoji en Chrome
 #http://www.omgubuntu.co.uk/2016/08/enable-color-emoji-linux-google-chrome-noto
+
+# tree directory
+sudo apt-get install tree

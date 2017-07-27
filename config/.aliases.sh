@@ -4,11 +4,12 @@ alias rm='rm -i'
 alias g="git"
 alias p="cd ~/proyectos/"
 alias c="cd ~/proyectos/cursos-lab/"
-alias t="cd ~/proyectos/test/"
+alias te="cd ~/proyectos/test/"
 alias aku="cd ~/proyectos/myProy/wp-content/themes/boilerplate"
 alias gu="gulp"
 alias gr="grunt"
 alias v="vim"
+alias t="tree"
 
 # tells me my IP Address
 alias myip='curl ip.appspot.com'
