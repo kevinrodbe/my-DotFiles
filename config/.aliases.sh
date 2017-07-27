@@ -10,6 +10,7 @@ alias gu="gulp"
 alias gr="grunt"
 alias v="vim"
 alias t="tree"
+alias xfa="sudo"
 
 # tells me my IP Address
 alias myip='curl ip.appspot.com'
