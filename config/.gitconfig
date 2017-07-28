@@ -15,81 +15,85 @@
 	bb = bisect bad
 	bs = bisect skip
 	bv = branch -v --list
-	
+
 	c = clone
-	
-    # Add
-    a = add -A
-    ad = add
-    aa = add .
 
-    # Commit
-    cm = commit -m
-    ca = commit --amend -m
+	# Add
+	a = add -A
+	ad = add
+	aa = add .
+	ignora = update-index --assume-unchanged
+	noignora = update-index --no-assume-unchanged
 
-    # Undo
-    forget = reset --hard
-    
-    # help
-    wtf = help -w
-    
-    # Checkout
-    co = checkout
-    cb = checkout -b
+	# Commit
+	cm = commit -m
+	ca = commit --amend -m
 
-    # Cherry-pick
-    chp = cherry-pick
+	# Undo
+	forget = reset --hard
+	unstage = reset HEAD --
 
-    # Diff
-    df = diff
-    dc = diff --cached
-    ds = diff --stat --relative
-    fls = diff-tree --no-commit-id --name-only -r
+	# help
+	wtf = help -w
 
-    # List
-    tl = tag -l
-    bl = branch -a
-    rl = remote -v
-    stal = stash list
+	# Checkout
+	co = checkout
+	cb = checkout -b
 
-    # Status
-    st = status -s
+	# Cherry-pick
+	chp = cherry-pick
 
-    # Pull
-    pl   = pull
-    plo  = pull --rebase origin
-    plom = pull --rebase origin master
-    plog = pull --rebase origin gh-pages
-    plu  = pull --rebase upstream
-    plum = pull --rebase upstream master
-    plug = pull --rebase upstream gh-pages
+	# Diff
+	df = diff
+	dc = diff --cached
+	ds = diff --stat --relative
+	fls = diff-tree --no-commit-id --name-only -r
 
-    # Push
-    ps   = push
-    pso  = push origin
-    psom = push origin master
-    psog = push origin gh-pages
-    psu  = push upstream
-    psum = push upstream master
-    psug = push upstream gh-pages
+	# List
+	tl = tag -l
+	bl = branch -a
+	rl = remote -v
+	stal = stash list
 
-    # Remote
-    ra  = remote add
-    rao = remote add origin
-    rau = remote add upstream
-    rs  = remote set-url
-    rso = remote set-url origin
-    rsu = remote set-url upstream
+	# Status
+	st = status -s
 
-    # Logs
-    l  = log --pretty=oneline --decorate --abbrev-commit --max-count=15
-    ll = log --graph --pretty=format:'%Cred%h%Creset %an: %s %Creset%Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-    lg = log -p
-    lol = log --graph --decorate --pretty=oneline --abbrev-commit
-    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-    
-    # Sync
-    sync = plu && pso
+	# Pull
+	pl   = pull
+	plo  = pull --rebase origin
+	plom = pull --rebase origin master
+	plog = pull --rebase origin gh-pages
+	plu  = pull --rebase upstream
+	plum = pull --rebase upstream master
+	plug = pull --rebase upstream gh-pages
+
+	# Push
+	ps   = push
+	pso  = push origin
+	psom = push origin master
+	psog = push origin gh-pages
+	psu  = push upstream
+	psum = push upstream master
+	psug = push upstream gh-pages
+
+	# Remote
+	ra  = remote add
+	rao = remote add origin
+	rau = remote add upstream
+	rs  = remote set-url
+	rso = remote set-url origin
+	rsu = remote set-url upstream
+
+	# Logs
+	l  = log --pretty=oneline --decorate --abbrev-commit --max-count=15
+	ll = log --graph --pretty=format:'%Cred%h%Creset %an: %s %Creset%Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	lg = log -p
+	lt = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+
+	# Sync
+	sync = plu && pso
 [help]
 	# Automatically correct and execute mistyped commands
 	autocorrect = 1
