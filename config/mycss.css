@@ -5,20 +5,31 @@
 /**
  *  comentarios
  */
-.mtk4 {
+.vscode-theme-defaults-themes-dark_plus-json .mtk4,
+.vscode-theme-defaults-themes-hc_black-json .mtk3 {
   font-style: italic !important;
 }
 
+
 /**
- *  keyword en js
+ *  keyword en js: function
  */
-[data-mode-id="javascript"] .mtk5 {
+.vscode-theme-defaults-themes-dark_plus-json [data-mode-id="javascript"] .mtk5,
+.vscode-theme-defaults-themes-hc_black-json [data-mode-id="javascript"] .mtk4 {
   font-style: italic !important;
 }
 
 /**
  *  atributos html + variables js
  */
-[data-mode-id="html"] .mtk11 {
+.vscode-theme-defaults-themes-dark_plus-json [data-mode-id="html"] .mtk11,
+.vscode-theme-defaults-themes-hc_black-json [data-mode-id="html"] .mtk10 {
   font-style: italic !important;
+}
+
+/**
+ *  simbolos de espacio
+ */
+.vscode-theme-defaults-themes-hc_black-json .monaco-editor .vs-whitespace {
+	opacity: .5;
 }
