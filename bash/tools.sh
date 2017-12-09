@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+sudo apt-get install jq
+
 #rar
 sudo apt-get install unrar
 
