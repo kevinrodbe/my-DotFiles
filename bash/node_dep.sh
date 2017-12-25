@@ -77,3 +77,9 @@ echo "[psi instalado]"
 # now
 sudo npm i -g --unsafe-perm  now
 # en c/proy: npm install --save-dev serve
+
+# npx: https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b
+sudo npm install -g npx
+
+# pnpm: https://medium.com/pnpm/why-should-we-use-pnpm-75ca4bfe7d93
+npm install -g pnpm
