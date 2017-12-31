@@ -6,6 +6,8 @@ sudo npm i -g nodemon
 #sudo npm install -g jade
 echo "[Jade Instalado]"
 
+npm install -g node-sass
+echo "[node-sass Instalado]"
 sudo npm install -g stylus
 echo "[Stylus Instalado]"
 sudo npm install -g nib
