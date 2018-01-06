@@ -122,7 +122,7 @@ _npm_install_completion() {
 compdef _npm_install_completion 'npm'
 # }
 
-export NVM_DIR="/home/gohan/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 ### MY ALIASES
