@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-sudo add-apt-repository ppa:webupd8team/sublime-text-3
-sudo apt-get update
-sudo apt-get install sublime-text-installer
+curl -o krb-sublime-3.deb https://download.sublimetext.com/sublime-text_build-3156_amd64.deb
+sudo dpkg -i krb-sublime-3.deb
+rm -rf krb-sublime-3.deb
 
 # associate sublimetext with git
 git config --global core.editor "subl -n -w"

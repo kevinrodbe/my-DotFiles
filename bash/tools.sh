@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# css to vscode
+cp -f ../config/vscode-mycss.css ~/.config/
+
 sudo apt-get install jq
 
 #rar

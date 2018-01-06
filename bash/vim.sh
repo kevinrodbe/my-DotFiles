@@ -112,6 +112,6 @@ if [ ! -d "vim-ctrlp-py-matcher" ]; then
     git clone https://github.com/FelikZ/ctrlp-py-matcher.git vim-ctrlp-py-matcher
 fi
 
-
+cp -f ../config/.vimrc ~/
 
 echo "[Vim y sus plugins Instalados] - jansanchez"

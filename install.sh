@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+bash bash/apt-dep.sh
 bash bash/git.sh
 bash bash/sublime.sh
 bash bash/zsh.sh

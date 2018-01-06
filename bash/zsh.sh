@@ -1,11 +1,8 @@
 #!/usr/bin/env bash
 
-sudo apt-get install zsh
-
-curl -L http://install.ohmyz.sh | sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 chsh -s /bin/zsh
-
 sudo chsh -s /bin/zsh
 
 cp ../.oh-my-zsh/themes/*.zsh-theme ~/.oh-my-zsh/themes/
@@ -21,7 +18,10 @@ git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
 git clone https://github.com/zsh-users/zsh-history-substring-search.git
 
 # zsh-url-highlighter
-git clone https://github.com/ascii-soup/zsh-url-highlighter.git 
+git clone https://github.com/ascii-soup/zsh-url-highlighter.git
 
+cp -f ../config/.zshrc ~/
+cp -f ../config/.aliases ~/
+cp -f ../config/kevinrodbe.zsh-theme ~/.oh-my-zsh/themes/
 
 echo "ZSH instalado: ***** Restart terminal *****"
