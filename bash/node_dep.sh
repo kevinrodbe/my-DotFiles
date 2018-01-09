@@ -87,3 +87,7 @@ npm install -g npx
 
 # pnpm: https://medium.com/pnpm/why-should-we-use-pnpm-75ca4bfe7d93
 npm install -g pnpm
+
+# angular
+npm install -g @angular/cli
+npm install -g cordova ionic
