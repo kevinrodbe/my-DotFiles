@@ -1,7 +1,6 @@
 /**
  * vscode's custom css
  */
-
 /**
  *  comentarios
  */
@@ -9,8 +8,6 @@
 .vscode-theme-defaults-themes-hc_black-json .mtk3 {
   font-style: italic !important;
 }
-
-
 /**
  *  keyword en js: function
  */
@@ -18,15 +15,13 @@
 .vscode-theme-defaults-themes-hc_black-json [data-mode-id="javascript"] .mtk4 {
   font-style: italic !important;
 }
-
 /**
  *  atributos html + variables js
  */
-.vscode-theme-defaults-themes-dark_plus-json [data-mode-id="html"] .mtk11,
+.vscode-theme-defaults-themes-dark_plus-json [data-mode-id="html"] .mtk13,
 .vscode-theme-defaults-themes-hc_black-json [data-mode-id="html"] .mtk10 {
   font-style: italic !important;
 }
-
 /**
  *  simbolos de espacio
  */
