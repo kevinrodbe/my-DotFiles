@@ -34,3 +34,9 @@ sudo pip3 install https://github.com/OzymandiasTheGreat/emoji-keyboard/archive/m
 
 # tree directory
 sudo apt-get install tree
+
+# java
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+
