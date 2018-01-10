@@ -17,7 +17,7 @@ bash bash/mysql.sh
 mkdir /home/gohan/proyectos
 bash bash/phpmyadmin.sh
 bash bash/tools.sh
-
+bash bash/java.sh
 # checar los drivers
 #lspci
 #lsusb
