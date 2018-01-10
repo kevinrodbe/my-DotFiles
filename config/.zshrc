@@ -125,5 +125,8 @@ compdef _npm_install_completion 'npm'
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+
 ### MY ALIASES
 source $HOME/.aliases.sh
