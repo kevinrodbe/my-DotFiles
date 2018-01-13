@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-#install PPA
-curl -sL https://deb.nodesource.com/setup | sudo bash -
-
 #install devps
 sudo apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev
 
