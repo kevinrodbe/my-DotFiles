@@ -35,6 +35,8 @@
 
 	# help
 	wtf = help -w
+	count = rev-list HEAD --count
+	score = shortlog
 
 	# Checkout
 	co = checkout
