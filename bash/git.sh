@@ -16,3 +16,7 @@ git config --global user.email email@email.com
 cp -f ../config/.gitconfig ~/
 
 echo "** git instalado **"
+
+git clone https://github.com/Fakerr/git-recall.git && cd git-recall
+sudo make install
+cd .. && rm -rf git-recall
