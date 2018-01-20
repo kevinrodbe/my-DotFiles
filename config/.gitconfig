@@ -3,6 +3,7 @@
 	email = kevinrodbe
 [core]
 	editor = subl -n -w
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [alias]
 	glast = log -1 HEAD
 	rbi = rebase --interactive
@@ -104,7 +105,7 @@
 	log = true
 # so much color
 [color]
-	ui = always
+	ui = true
 [color "diff"]
 	meta = yellow bold
 	commit = green bold
