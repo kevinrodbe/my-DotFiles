@@ -16,6 +16,8 @@ echo "[Stylus Instalado]"
 #npm install -g coffee-script
 #echo "[CoffeeScript Instalado]"
 
+# git 
+npm install --global diff-so-fancy
 
 npm i -g firebase-tools
 echo "[********** Firebase installed **********]"
