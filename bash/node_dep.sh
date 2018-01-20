@@ -66,6 +66,8 @@ npm install -g phantomas
 phantomjs --version
 echo "[phantomas Instalado]"
 
+npm install -g bundle-buddy
+
 #npm install -g psi
 #echo "[psi Instalado]"
 
