@@ -13,6 +13,9 @@ echo "[Stylus Instalado]"
 npm install -g nib
 echo "[Stylus Instalado]"
 
+#node
+npm install -g node-inspect
+
 #npm install -g coffee-script
 #echo "[CoffeeScript Instalado]"
 
