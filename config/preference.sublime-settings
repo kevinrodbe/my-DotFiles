@@ -17,6 +17,7 @@
 		".awestruct",
 		".sass-cache",
 		"node_modules",
+		".sourcemaps",
 		".tmp",
 		".vscode",
 		"dist"
