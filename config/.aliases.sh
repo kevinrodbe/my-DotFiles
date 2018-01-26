@@ -44,6 +44,12 @@ alias npmis="npm install -S"
 alias npmid="npm install -D"
 alias npmig="npm install -g"
 
+# ionic
+alias ioc="ionic cordova"
+alias iorm="rm -rf node_modules/ && rm -rf plugins/ && rm -rf www/ && rm -rf platforms/ && rm -rf .sourcemaps/"
+alias ioi="npm i && ioc build"
+alias ior="ioc run"
+
 #tmux
 alias klt="tmux kill-session"
 # restart window
