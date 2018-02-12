@@ -128,5 +128,9 @@ export NVM_DIR="$HOME/.nvm"
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 
+# fix error de: invalid us-ascii character '\xC3'
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 ### MY ALIASES
 source $HOME/.aliases.sh
