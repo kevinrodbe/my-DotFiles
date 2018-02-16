@@ -53,6 +53,8 @@ alias ioi="npm i && ioc build"
 alias ior="ioc run"
 alias ioan="ior android --device"
 alias cpl="cordova plugin list"
+alias ioap="ioc plugin add"
+alias iormp="ioc plugin rm"
 
 #tmux
 alias klt="tmux kill-session"
