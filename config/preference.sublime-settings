@@ -4,25 +4,31 @@
 	[
 		"Seti_UI"
 	],
-	"font_size": 9,
-	"ignored_packages":
+	"binary_file_patterns":
 	[
-		"Vintage"
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip",
+		"*.gzip",
+		"*.tbz2",
+		"*.ai",
+		"*.psd",
+		"*.min.js",
+		"tmp/",
+		"_tmp/"
 	],
-	"folder_exclude_patterns": [
-		".svn",
-		".git",
-		".hg",
-		"CVS",
-		".awestruct",
-		".sass-cache",
-		"node_modules",
-		".sourcemaps",
-		".tmp",
-		".vscode",
-		"dist"
-	],
-	"file_exclude_patterns": [
+	"file_exclude_patterns":
+	[
 		"*.pyc",
 		"*.pyo",
 		"*.exe",
@@ -48,42 +54,38 @@
 		"*.gzip",
 		"*.min.*"
 	],
-	"binary_file_patterns": [
-		"*.jpg",
-		"*.jpeg",
-		"*.png",
-		"*.gif",
-		"*.ttf",
-		"*.tga",
-		"*.dds",
-		"*.ico",
-		"*.eot",
-		"*.pdf",
-		"*.swf",
-		"*.jar",
-		"*.zip",
-		"*.gzip",
-		"*.tbz2",
-		"*.ai",
-		"*.psd",
-		"*.min.js",
-		"tmp/",
-		"_tmp/"
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		".awestruct",
+		".sass-cache",
+		"node_modules",
+		".tmp",
+		".vscode",
+		".sourcemaps",
+		"dist",
+		"_book",
+		"www"
 	],
+	"font_size": 10,
+	"ignored_packages":
+	[
+		"JSCS-Formatter",
+		"Vintage"
+	],
+	"theme": "Spacegray.sublime-theme",
+	"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
+	"spacegray_fileicons": true,
 	"jsdocs_function_description": true,
 	"jsdocs_param_description": true,
 	"jsdocs_param_name": true,
 	"save_on_focus_lost": false,
-	"update_check": false,
-	"word_wrap": "true",
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"theme": "ayu-dark.sublime-theme",
-	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
-	"ui_separator":       true,
-	"ui_font_size_small": true,
-	"ui_big_tabs":        true,
-	"ui_fix_tab_labels":  true,
-	"ui_font_source_code_pro": true
+	"update_check": false,
+	"word_wrap": "true"
 }
