@@ -5,26 +5,52 @@
  *  comentarios
  */
 .vscode-theme-defaults-themes-dark_plus-json .mtk4,
+.akamud-vscode-theme-onedark-themes-OneDark-json .mtk4,
 .vscode-theme-defaults-themes-hc_black-json .mtk3 {
   font-style: italic !important;
+  color: #608b4e;
 }
+
 /**
  *  keyword en js: function
  */
 .vscode-theme-defaults-themes-dark_plus-json [data-mode-id="javascript"] .mtk5,
+.akamud-vscode-theme-onedark-themes-OneDark-json [data-mode-id="javascript"] .mtk15,
+.akamud-vscode-theme-onedark-themes-OneDark-json [data-mode-id="javascript"] .mtk3,
 .vscode-theme-defaults-themes-hc_black-json [data-mode-id="javascript"] .mtk4 {
   font-style: italic !important;
 }
+
+/**
+ *  keyword en ts: function
+ */
+.vscode-theme-defaults-themes-dark_plus-json [data-mode-id="typescript"] .mtk5,
+.akamud-vscode-theme-onedark-themes-OneDark-json [data-mode-id="typescript"] .mtk15,
+.akamud-vscode-theme-onedark-themes-OneDark-json [data-mode-id="typescript"] .mtk3,
+.vscode-theme-defaults-themes-hc_black-json [data-mode-id="typescript"] .mtk4 {
+  font-style: italic !important;
+}
+
 /**
  *  atributos html + variables js
  */
 .vscode-theme-defaults-themes-dark_plus-json [data-mode-id="html"] .mtk13,
+.akamud-vscode-theme-onedark-themes-OneDark-json [data-mode-id="html"] .mtk5,
 .vscode-theme-defaults-themes-hc_black-json [data-mode-id="html"] .mtk10 {
   font-style: italic !important;
 }
+
 /**
  *  simbolos de espacio
  */
 .vscode-theme-defaults-themes-hc_black-json .monaco-editor .vs-whitespace {
 	opacity: .3;
+}
+
+
+/**
+ * thema hc-black
+ */
+.hc-black .monaco-scrollable-element>.visible {
+  opacity: 0.4 !important;
 }
