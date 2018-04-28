@@ -9,8 +9,7 @@
 	glast = log -1 HEAD
 	rbi = rebase --interactive
 	rbc = rebase --continue
-	mt = mergetool
-	l = log --oneline --decorate
+	mt = mergetool 
 	lc = log ORIG_HEAD.. --stat --no-merges
 	lg = log --oneline --decorate --graph
 	bg = bisect good
@@ -89,7 +88,7 @@
 	rsu = remote set-url upstream
 
 	# Logs
-	l  = log --pretty=oneline --decorate --abbrev-commit --max-count=15
+	l  = log --pretty=format:'%Cred%h%Creset %an: %s %Creset%Cgreen(%cr)%Creset' --decorate --abbrev-commit --date=relative --max-count=15
 	ll = log --graph --pretty=format:'%Cred%h%Creset %an: %s %Creset%Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	lg = log -p
 	lt = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
