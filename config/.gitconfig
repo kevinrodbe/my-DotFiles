@@ -88,7 +88,8 @@
 	rsu = remote set-url upstream
 
 	# Logs
-	l  = log --pretty=format:'%Cgreen%h%Creset%C(auto)%d%Creset %C(cyan)<%an, %cr>%Creset %n %s' --decorate --abbrev-commit --date=relative --all --max-count=15 --branches
+	l  = log --pretty=format:'%Cgreen%h%Creset%C(auto)%d%Creset %C(cyan)<%an, %cr>%Creset %n %s' --decorate --abbrev-commit --date=relative --max-count=15
+	la  = log --pretty=format:'%Cgreen%h%Creset%C(auto)%d%Creset %C(cyan)<%an, %cr>%Creset %n %s' --decorate --abbrev-commit --date=relative --all --max-count=15 --branches
 	ll = log --graph --pretty=format:'%Cred%h%Creset %an: %s %Creset%Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	lg = log -p
 	lt = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
