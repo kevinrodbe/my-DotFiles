@@ -22,6 +22,9 @@ npm install -g node-inspect
 # git
 npm install --global diff-so-fancy
 
+# ngrx
+npm install ngrx-generator -g
+
 npm i -g firebase-tools
 echo "[********** Firebase installed **********]"
 
