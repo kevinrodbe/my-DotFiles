@@ -13,12 +13,16 @@ cd ~/.oh-my-zsh/custom/plugins
 
 # zsh-syntax-highlighting
 git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
+# https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
 
 # history-substring-search
 git clone https://github.com/zsh-users/zsh-history-substring-search.git
 
 # zsh-url-highlighter
 git clone https://github.com/ascii-soup/zsh-url-highlighter.git
+
+# color ls
+# https://github.com/athityakumar/colorls#recommended-configurations
 
 cp -f ../config/.zshrc ~/
 cp -f ../config/.aliases ~/
