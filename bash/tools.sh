@@ -5,6 +5,10 @@ cp -f ../config/vscode-mycss.css ~/.config/
 
 sudo apt-get install jq
 
+# USE !!! bat instead of cat 
+sudo dpkg -i bat_0.15.4_amd64.deb  # adapt version number and architecture
+# https://github.com/sharkdp/bat#installation
+
 #rar
 sudo apt-get install unrar
 
