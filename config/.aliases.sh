@@ -11,6 +11,10 @@ alias gr="grunt"
 alias v="vim"
 alias t="tree"
 alias xfa="sudo"
+alias cat=bat
+alias man=batman
+alias j=autojump
+alias gc="git-stats -g"
 
 # tells me my IP Address
 alias myip='curl ip.appspot.com'
@@ -209,3 +213,84 @@ function extract() {
 		echo "'$1' is not a valid file"
 	fi
 }
+
+
+function frg() {
+  rg -i "$1" | fzf
+}
+
+fgi() {
+
+  # param validation
+  if [[ ! `git log -n 1 $@ | head -n 1` ]] ;then
+    return
+  fi
+
+  # filter by file string
+  local filter
+  # param existed, git log for file if existed
+  if [ -n $@ ] && [ -f $@ ]; then
+    filter="-- $@"
+  fi
+
+  # git command
+  local gitlog=(
+    git log
+    --graph
+    --color=always
+    --abbrev=7
+    --format='%Cgreen%h%Creset%C(auto)%d%Creset %C(cyan)<%an, %cr>%Creset %s'
+    $@
+  )
+
+  # fzf command
+  local fzf=(
+    fzf
+    --ansi
+    --no-sort
+    --reverse
+    --tiebreak=index
+    --preview "f() { set -- \$(echo -- \$@ | grep -o '[a-f0-9]\{7\}'); [ \$# -eq 0 ] || git show --color=always \$1 $filter; }; f {}"
+    --bind=ctrl-s:toggle-sort
+   --preview-window=right:60%
+  )
+
+  # piping them
+  $gitlog | $fzf
+}
+
+# # fkill - kill process
+# # Similar to "kill -9 **" fzf default completion
+fkill() {
+  local pid
+  pid=$(ps -ef | sed 1d | fzf -m | awk '{print $2}')
+
+  if [ "x$pid" != "x" ]
+  then
+    echo $pid | xargs kill -${1:-9}
+  fi
+}
+
+# # Wrapper over wd. List bookmarks in fzf and pipe selected alias to "wd"
+# # mfaerevaag/wd: Jump to custom directories in zsh - https://github.com/mfaerevaag/wd
+# # Inspired by: Fuzzy bookmarks for your shell [Dmitry Frank] - https://dmitryfrank.com/articles/shell_shortcuts
+fwd(){
+  local wdpoint
+  wdpoint=$(wd list | sed 1d | fzf | awk '{ print $1 }')
+
+  if [ "$wdpoint" != "" ]
+  then
+    wd "$wdpoint"
+  fi
+}
+
+fo() {
+  local out file key
+  IFS=$'\n' out=("$(fzf-tmux --query="$1" --exit-0 --expect=ctrl-o,ctrl-e)")
+  key=$(head -1 <<< "$out")
+  file=$(head -2 <<< "$out" | tail -1)
+  if [ -n "$file" ]; then
+    [ "$key" = ctrl-o ] && open "$file" || ${EDITOR:-vim} "$file"
+  fi
+}
+
