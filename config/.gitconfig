@@ -3,8 +3,16 @@
 	email = kevinrodbe
 [core]
 	editor = subl -n -w
-	pager = diff-so-fancy | less --tabs=4 -RFX
-	excludesfile = /Users/me/.gitignore
+	# pager = diff-so-fancy | less --tabs=2 -RFX
+	pager = delta
+	excludesfile = /Users/kevinrodbe/.gitignore
+[delta]
+	plus-color = "#012800"
+	minus-color = "#340001"
+	syntax-theme = Dracula
+	side-by-side = true
+[interactive]
+	diffFilter = delta --color-only
 [alias]
 	glast = log -1 HEAD
 	rbi = rebase --interactive
@@ -128,3 +136,13 @@
 	added = yellow
 	changed = green
 	untracked = cyan
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = ~/Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = ~/.stCommitMsg
+# [pull]
+#	ff = only
