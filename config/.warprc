@@ -1,0 +1,11 @@
+# in: ~
+fr-configurator:~/proyectos/mx/vibia/fr-configurator
+sr-products:~/proyectos/mx/vibia/sr-products
+oim-client:~/proyectos/mx/mpf/oim/client
+admin-portal:~/proyectos/mx/mpf/oim/client/wwwroot/admin-portal
+au-web:~/proyectos/mx/mpf/self_service_client
+au-app:~/proyectos/mx/mpf/au-app
+app-proc:~/proyectos/mx/mpf/appprocmx
+au-swagger:~/proyectos/mx/mpf/autoservicio_swagger
+myd:~/proyectos/mx/mpf/myd
+sr-projects:~/proyectos/mx/vibia/sr-projects
