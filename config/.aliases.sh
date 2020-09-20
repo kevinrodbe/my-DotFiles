@@ -108,6 +108,9 @@ alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET
 # check off personal goals (open main README.md in vim)
 alias pg-ch="vim ~/proyectos/dk/README.md"
 
+# mongo
+alias mod="mongod --dbpath /Users/$(whoami)/data/mongodb"
+
 # create new week in review
 function pg-rv() {
   if [ $# -eq 0 ]; then
@@ -292,5 +295,12 @@ fo() {
   if [ -n "$file" ]; then
     [ "$key" = ctrl-o ] && open "$file" || ${EDITOR:-vim} "$file"
   fi
+}
+
+function p4() {
+  tmux split-window -v
+  tmux split-window -v
+  tmux select-pane -t 1
+  tmux split-window -v
 }
 
