@@ -15,6 +15,7 @@ alias cat=bat
 alias man=batman
 alias j=autojump
 alias gc="git-stats -g"
+alias ci=code-insiders
 
 # tells me my IP Address
 alias myip='curl ip.appspot.com'
@@ -302,5 +303,20 @@ function p4() {
   tmux split-window -v
   tmux select-pane -t 1
   tmux split-window -v
+  if [ "$1" ]
+    then
+      tmux renamew "$1"
+  fi
 }
 
+function vi-be() {
+  tmux split-window -v
+  tmux split-window -v
+  tmux select-pane -t 1
+  tmux split-window -v
+  tmux renamew "vi-be"
+  tmux send-keys -t 1 'p && cd mx/vibia/sr-products' C-j
+  tmux send-keys -t 2 'p && cd mx/vibia/sr-images' C-j
+  tmux send-keys -t 3 'p && cd mx/vibia/sr-users' C-j
+  tmux send-keys -t 4 'p && cd mx/vibia/sr-projects' C-j
+}
