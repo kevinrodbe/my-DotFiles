@@ -101,3 +101,7 @@ npm install -g pnpm
 # angular
 npm install -g @angular/cli
 npm install -g cordova ionic
+
+# terminal
+npm install -g tldr
+# exa, bat, enhancd, fzf, ripgrep, 
