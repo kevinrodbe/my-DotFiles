@@ -67,3 +67,15 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt-get update
 sudo apt-get install neovim
+
+# terminal
+gem install colorls
+brew install git-delta
+brew install eth-p/software/bat-extras
+brew install autojump
+brew install mkcert
+brew install nss
+brew install hub
+brew install tree
+
+https://github.com/athityakumar/colorls

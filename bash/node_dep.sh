@@ -104,4 +104,6 @@ npm install -g cordova ionic
 
 # terminal
 npm install -g tldr
-# exa, bat, enhancd, fzf, ripgrep, 
+npm install -g degit
+npm i -g git-stats
+# exa, bat, enhancd, fzf, ripgrep, colors

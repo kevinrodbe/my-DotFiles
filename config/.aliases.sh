@@ -9,13 +9,15 @@ alias aku="cd ~/proyectos/myProy/wp-content/themes/boilerplate"
 alias gu="gulp"
 alias gr="grunt"
 alias v="vim"
-alias t="tree"
+alias t="tree -I 'node_modules|dist'"
 alias xfa="sudo"
 alias cat=bat
 alias man=batman
 alias j=autojump
 alias gc="git-stats -g"
-alias ci=code-insiders
+alias codei=code-insiders
+alias he=heroku
+alias cz="npx cz"
 
 # tells me my IP Address
 alias myip='curl ip.appspot.com'
@@ -62,6 +64,12 @@ alias cpl="cordova plugin list"
 alias ioap="ioc plugin add"
 alias iormp="ioc plugin rm"
 
+# redis
+alias redis-start="brew services start redis"
+alias redis-stop="brew services stop redis"
+alias redis-restart="brew services restart redis"
+alias redis-monitor="redis-cli monitor"
+
 #tmux
 alias klt="tmux kill-session"
 # restart window
@@ -71,6 +79,7 @@ alias wtf="source ~/.zshrc"
 alias gc="google-chrome"
 alias ff="firefox"
 alias go="nautilus"
+alias ngrok="~/ngrok"
 
 # compile js con rhino
 alias rhino="node r.js -o build.js"
@@ -98,9 +107,19 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ifconfig getifaddr en0"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
+function myip2() {
+  curl --request GET \
+  --url https://freegeoip.app/json/ \
+  --header 'accept: application/json' \
+  --header 'content-type: application/json'
+}
+
 # View HTTP traffic
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
+
+alias mysql=/usr/local/mysql/bin/mysql
+alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 
 #
 # Personal Goals
@@ -166,6 +185,12 @@ function server() {
  	# statikk is good because it won't expose hidden folders/files by default.
  	# yarn global add statikk
  	statikk --port "$port" .
+}
+
+function ssl() {
+  mkdir .cert
+  mkcert -key-file ./.cert/key.pem -cert-file ./.cert/cert.pem "localhost"
+  mkcert -install
 }
 
 # Copy w/ progress
@@ -319,4 +344,16 @@ function vi-be() {
   tmux send-keys -t 2 'p && cd mx/vibia/sr-images' C-j
   tmux send-keys -t 3 'p && cd mx/vibia/sr-users' C-j
   tmux send-keys -t 4 'p && cd mx/vibia/sr-projects' C-j
+}
+
+function vi-be-2() {
+  tmux split-window -v
+  tmux split-window -v
+  tmux select-pane -t 1
+  tmux split-window -v
+  tmux renamew "pri-erp-proj-or"
+  tmux send-keys -t 1 'p && cd mx/vibia/sr-prices' C-j
+  tmux send-keys -t 2 'p && cd mx/vibia/sr-erp' C-j
+  tmux send-keys -t 3 'p && cd mx/vibia/sr-projects' C-j
+  tmux send-keys -t 4 'p && cd mx/vibia/sr-orders' C-j
 }
