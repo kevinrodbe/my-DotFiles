@@ -65,7 +65,6 @@ plugins=(
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -100,13 +99,13 @@ if [[ -z "$TMUX" ]] ;then
     ID="`tmux ls | grep -vm1 attached | cut -d: -f1`" # get the id of a deattached session
     if [[ -z "$ID" ]] ;then # if not available create a new one
         tmux new-session -s 1-main -d
-        tmux split-window -v
-        tmux split-window -t 2 -h
-        tmux send-keys -t 1 'p && clear' C-j
-        tmux send-keys -t 2 'p && clear' C-m
-        tmux send-keys -t 3 'p && clear' enter
+        # tmux split-window -v
+        # tmux split-window -t 2 -h
+        # tmux send-keys -t 1 'p && clear' C-j
+        # tmux send-keys -t 2 'p && clear' C-m
+        # tmux send-keys -t 3 'p && clear' enter
         tmux select-pane -t 1
-		tmux attach -t 1-main
+        tmux attach -t 1-main
     else
         tmux attach-session -t "$ID" # if available attach to it
     fi
@@ -140,20 +139,19 @@ export NVM_DIR="$HOME/.nvm"
 # source $(brew --prefix nvm)/nvm.sh
 
 # Create a JAVA_HOME variable, determined dynamically
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export JAVA_HOME=$(/usr/libexec/java_home -v 17)
 
 # Add that to the global PATH variable
 export PATH=${JAVA_HOME}/bin:$PATH
 
-export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/tools
+# export ANDROID_HOME=$HOME/Android/Sdk
+# export PATH=$PATH:$ANDROID_HOME/tools
 
 # fix error de: invalid us-ascii character '\xC3'
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 eval "$(gulp --completion=zsh)"
-
 
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
