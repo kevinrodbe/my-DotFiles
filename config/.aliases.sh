@@ -33,13 +33,18 @@ alias emojis="open http://www.emoji-cheat-sheet.com/"
 # because eslint is installed locally. Now we can use slint --init ó slint myfile.js
 alias slint="./node_modules/.bin/eslint"
 
+# ls
+alias cls="colorls"
+alias lsl="colorls --gs -lA  -t --report"
+alias lst="colorls --tree -t"
+
 # Easier navigation:
 alias ..="cd .."
 alias .2="cd ../.."
 alias .3="cd ../../.."
 alias .4="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
-alias --="cd -"
+alias _="cd -"
 
 # npm
 alias nch="npm-check"
@@ -56,13 +61,13 @@ alias io="ionic"
 alias cdv="cordova"
 alias ioc="ionic cordova"
 alias iog="ionic generate"
-alias iorm="rm -rf node_modules/ && rm -rf plugins/ && rm -rf www/ && rm -rf platforms/ && rm -rf .sourcemaps/"
-alias ioi="npm i && ioc build"
-alias ior="ioc run"
-alias ioan="ior android --device"
+alias iorm="rm -rf node_modules/ && rm -rf plugins/ && rm -rf www/ && rm -rf platforms/ && rm -rf .sourcemaps/ && rm -f yarn.lock && rm -f npm-shrinkwrap.json && rm -f package-lock.json"
+alias ioi="npm i && ionic cordova build"
+alias ior="ionic cordova run"
+alias ioan="ionic cordova run android --device"
 alias cpl="cordova plugin list"
-alias ioap="ioc plugin add"
-alias iormp="ioc plugin rm"
+alias ioap="ionic cordova plugin add"
+alias iormp="ionic cordova plugin rm"
 
 # redis
 alias redis-start="brew services start redis"
@@ -70,7 +75,7 @@ alias redis-stop="brew services stop redis"
 alias redis-restart="brew services restart redis"
 alias redis-monitor="redis-cli monitor"
 
-#tmux
+# tmux
 alias klt="tmux kill-session"
 # restart window
 alias wtf="source ~/.zshrc"
@@ -174,7 +179,7 @@ function mp3() {
   if [ $# -eq 0 ]; then
       print "Oops. Please enter a url: get-audio <youtube-link>"
   else
-    cd ./Music && youtube-dl --extract-audio --audio-format mp3 $1 && cd -
+    cd ~/Music && youtube-dl --extract-audio --audio-format mp3 $1 && cd -
   fi
 }
 
@@ -242,7 +247,6 @@ function extract() {
 		echo "'$1' is not a valid file"
 	fi
 }
-
 
 function frg() {
   rg -i "$1" | fzf
@@ -334,16 +338,16 @@ function p4() {
   fi
 }
 
-function vi-be() {
+function vi-be-1() {
   tmux split-window -v
   tmux split-window -v
   tmux select-pane -t 1
   tmux split-window -v
-  tmux renamew "vi-be"
-  tmux send-keys -t 1 'p && cd mx/vibia/sr-products' C-j
-  tmux send-keys -t 2 'p && cd mx/vibia/sr-images' C-j
-  tmux send-keys -t 3 'p && cd mx/vibia/sr-users' C-j
-  tmux send-keys -t 4 'p && cd mx/vibia/sr-projects' C-j
+  tmux renamew "ma-us-prod-im"
+  tmux send-keys -t 1 'p && cd mx/vibia/sr-masters' C-j
+  tmux send-keys -t 2 'p && cd mx/vibia/sr-users' C-j
+  tmux send-keys -t 3 'p && cd mx/vibia/sr-products' C-j
+  tmux send-keys -t 4 'p && cd mx/vibia/sr-images' C-j
 }
 
 function vi-be-2() {
@@ -356,4 +360,22 @@ function vi-be-2() {
   tmux send-keys -t 2 'p && cd mx/vibia/sr-erp' C-j
   tmux send-keys -t 3 'p && cd mx/vibia/sr-projects' C-j
   tmux send-keys -t 4 'p && cd mx/vibia/sr-orders' C-j
+}
+
+function xe-fe-1() {
+  tmux split-window -v
+  tmux split-window -v
+  tmux renamew "xe-fe-1"
+  tmux send-keys -t 1 'p && cd xepe/xepelin-backoffice-client' C-j
+  tmux send-keys -t 2 'p && cd xepe/xepelin-client-global' C-j
+  tmux send-keys -t 3 'p && cd xepe/xepelin-client' C-j
+}
+
+function xe-be-1() {
+  tmux split-window -v
+  tmux split-window -v
+  tmux renamew "xe-be-1"
+  tmux send-keys -t 1 'p && cd xepe/xepelin-backoffice-server' C-j
+  tmux send-keys -t 2 'p && cd xepe/xepelin-server-global' C-j
+  tmux send-keys -t 3 'p && cd xepe/xepelin-server' C-j
 }
