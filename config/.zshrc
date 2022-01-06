@@ -61,6 +61,7 @@ plugins=(
     yarn
     wd
     zsh-autosuggestions
+    zsh-syntax-highlighting
 )
 
 # User configuration
