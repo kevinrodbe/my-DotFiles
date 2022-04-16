@@ -77,5 +77,7 @@ brew install mkcert
 brew install nss
 brew install hub
 brew install tree
+brew install exa
+brew install bat
 
 https://github.com/athityakumar/colorls
