@@ -52,5 +52,8 @@ package-lock.json
 yarn.lock
 .cert
 TODO
-rodbe.*
+*.rodbe.*
 .vscode
+.angular
+.fleet
+.jampack
