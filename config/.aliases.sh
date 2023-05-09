@@ -84,7 +84,6 @@ alias wtf="source ~/.zshrc"
 alias gc="google-chrome"
 alias ff="firefox"
 alias go="nautilus"
-alias ngrok="~/ngrok"
 
 # compile js con rhino
 alias rhino="node r.js -o build.js"
