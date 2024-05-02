@@ -107,3 +107,8 @@ npm install -g tldr
 npm install -g degit
 npm i -g git-stats
 # exa, bat, enhancd, fzf, ripgrep, colors
+
+# install volta and set corepack
+curl https://get.volta.sh | bash
+corepack enable
+corepack enable --install-directory ~/.volta/bin
