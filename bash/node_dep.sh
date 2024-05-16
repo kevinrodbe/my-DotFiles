@@ -112,3 +112,4 @@ npm i -g git-stats
 curl https://get.volta.sh | bash
 corepack enable
 corepack enable --install-directory ~/.volta/bin
+corepack enable pnpm
