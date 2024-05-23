@@ -40,6 +40,7 @@
 	ca = commit --amend -m
 
 	# Undo
+        undo = reset --soft HEAD~
 	forget = reset --hard
 	unstage = reset HEAD --
 
@@ -144,5 +145,6 @@
 	trustExitCode = true
 [commit]
 	template = ~/.stCommitMsg
-# [pull]
+[pull]
+	rebase = false
 #	ff = only
