@@ -47,6 +47,7 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias _="cd -"
 
 # npm
+alias ntli="ntl -i"
 alias nch="npm-check"
 alias npmt="npm test"
 alias npms="npm start"
@@ -55,7 +56,7 @@ alias npmi="npm install"
 alias npmis="npm install -S"
 alias npmid="npm install -D"
 alias npmig="npm install -g"
-
+alias rmi="rm -rf package-lock.json yarn.lock pnpm-lock.yaml node_modules"
 # ionic
 alias io="ionic"
 alias cdv="cordova"
