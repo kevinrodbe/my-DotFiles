@@ -48,6 +48,7 @@ alias _="cd -"
 
 # npm
 alias ntli="ntl -i"
+alias npkill="npx npkill"
 alias nch="npm-check"
 alias npmt="npm test"
 alias npms="npm start"
